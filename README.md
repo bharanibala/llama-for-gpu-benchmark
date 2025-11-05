@@ -1,8 +1,12 @@
 # LLama For GPU Benchmark
 
 ### Step 1: 
-login to huggingface if not create account by signing up, then get your login key which is required for this project. paste the login key in place of line 754 in crisismmd_llama_pseudo_labeler.py
+Login to huggingface if not create account by signing up, then get your login key which is required for this project. paste the login key in place of line 754 in crisismmd_llama_pseudo_labeler.py
 
+### Step 2:
+Request for using the model from HuggingFace and make sure you received the access, before executing the code.
+
+### Inside the code:
 The possible values for for the task is humanitarian and informative
 
 The files for the test path can be found in CrisisMMD_Modified. In the original dataset, the actual train file contains the combination of tweets and images resulting in too many duplicate rows. also, the labels of image and tweet texts mismatch for some rows. those rows are removed and placed in the agreed labels. Again, the agreed label has some duplicates, which are filtered and placed in the image_only and text_only files. We are using these files for the test inference here.
