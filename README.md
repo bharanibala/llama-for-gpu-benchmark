@@ -1,9 +1,12 @@
 # LLama For GPU Benchmark
 
 ### Step 1: 
-Login to huggingface if not create account by signing up, then get your login key which is required for this project. paste the login key in place of line 754 in crisismmd_llama_pseudo_labeler.py
+Set up the environment using the provided requirements.txt file
 
 ### Step 2:
+Login to huggingface if not create account by signing up, then get your login key which is required for this project. paste the login key in place of line 754 in crisismmd_llama_pseudo_labeler.py
+
+### Step 3:
 Request for using the model from HuggingFace (https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct) and make sure you received the access, before executing the code. 
 
 ### Inside the code:
