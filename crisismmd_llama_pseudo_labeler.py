@@ -757,7 +757,7 @@ if __name__ == "__main__":
 
     model_name="meta-llama/Llama-3.2-11B-Vision-Instruct"
     task_name="Humanitarian"
-    test_data_path="../CrisisMMD_Modified/humanitarian/image_only.json"
+    test_data_path="../CrisisMMD_Modified/humanitarian/text_only.json"
     dev_data_path="../crisismmd_datasplit_agreed_label/crisismmd_datasplit_agreed_label/task_humanitarian_text_img_agreed_lab_dev.tsv"
     result_file_path="../llm_pseudo_labels/humanitarian/Llama-3.2-11B-Vision-Instruct-Huma-Zeroshot-Text-Only.json" 
     few_shot_num=0
