@@ -10,13 +10,15 @@ Login to huggingface if not create account by signing up, then get your login ke
 Request for using the model from HuggingFace (https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct) and make sure you received the access, before executing the code. 
 
 ### Inside the code:
-The possible values for for the task is humanitarian and informative
+1. The possible values for for the task is *"humanitarian"* and *"informative"*
 
-The files for the test path can be found in CrisisMMD_Modified. In the original dataset, the actual train file contains the combination of tweets and images resulting in too many duplicate rows. also, the labels of image and tweet texts mismatch for some rows. those rows are removed and placed in the agreed labels. Again, the agreed label has some duplicates, which are filtered and placed in the image_only and text_only files. We are using these files for the test inference here.
+2. The files for the test path can be found in CrisisMMD_Modified. In the original dataset, the actual train file contains the combination of tweets and images resulting in too many duplicate rows. Also, the labels of image and tweet texts mismatch for some rows. those rows are removed and placed in the agreed labels. Again, the agreed label has some duplicates, which are filtered and placed in the image_only and text_only files. We are using these files for the test inference here.
 
-we use the dev data for the few shot inference. The code takes the no. of few shot instances mentioned and uses that as examples in the prompt however the performance decreases when compared to zero-shot inference.
+3. we use the dev data for the few shot inference. The code takes the no. of few shot instances mentioned and uses that as examples in the prompt however the performance decreases when compared to zero-shot inference.
 
-The use_texts and use_images flags are used to determine the type of the execution leading to three different modalities namely text only, image only and text image which has its own prompt need to be used accordingly based on the task.
+4. The use_texts and use_images flags are used to determine the type of the execution leading to three different modalities namely text only, image only and text image which has its own prompt need to be used accordingly based on the task.
+
+5. The provided code and dataset can support only the text modality. Please download the images from the original dataset and make sure to do the required code changes to accomodate the images and text image modalities
 
 ## Fine-tuning Multi-model LLM for Crisis MMD
 Original Repo: https://github.com/deeplearning-lab-csueb/Fine-tune-Multimodal-LLM-for-CrisisMMD
