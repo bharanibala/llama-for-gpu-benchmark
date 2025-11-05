@@ -4,7 +4,7 @@
 Login to huggingface if not create account by signing up, then get your login key which is required for this project. paste the login key in place of line 754 in crisismmd_llama_pseudo_labeler.py
 
 ### Step 2:
-Request for using the model from HuggingFace and make sure you received the access, before executing the code.
+Request for using the model from HuggingFace (https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct) and make sure you received the access, before executing the code. 
 
 ### Inside the code:
 The possible values for for the task is humanitarian and informative
