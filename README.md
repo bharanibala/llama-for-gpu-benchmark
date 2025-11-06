@@ -1,5 +1,7 @@
 # LLama For GPU Benchmark
 
+This work is based on the Fine-tuning Multi-model LLM for Crisis MMD Repo: https://github.com/deeplearning-lab-csueb/Fine-tune-Multimodal-LLM-for-CrisisMMD
+
 ### Step 1: 
 Set up the environment using the provided requirements.txt file
 
@@ -20,8 +22,8 @@ Request for using the model from HuggingFace (https://huggingface.co/meta-llama/
 
 5. The provided code and dataset can support only the text modality. Please download the images from the original dataset and make sure to do the required code changes to accomodate the images and text image modalities
 
-## Fine-tuning Multi-model LLM for Crisis MMD
-Original Repo: https://github.com/deeplearning-lab-csueb/Fine-tune-Multimodal-LLM-for-CrisisMMD
+## Fine-tuning/Training Llama using LoRA:
+The 'train_text_only.py' file contains the code. This needs 'pip install unsloth' to be run in addition to the libraries mentioned in requirments.txt. A new file *'text_only.jsonl'* has been added as the load_dataset code expects json data to be in record orient for some reason while the index orient results only in the index numbers as rows rather than the actual rows. Consumes 21GB of GPU.
 
 ## CrisisMMD dataset
 Original CrisisMMD dataset: https://crisisnlp.qcri.org/crisismmd 
